@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Inqaba Security</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <img src="images/logo.png" alt="Inqaba Security Logo" class="logo" />
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link">About</a></li>
+                    <li><a href="service.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="fade-in-up">Get in <span class="highlight">Touch</span></h1>
+                <p class="fade-in-up delay-1">Have a question or need a security consultation? We're here to help.</p>
+                <div class="scroll-indicator fade-in-up delay-2"></div>
+            </div>
+        </section>
+
+        <section class="contact-section reveal-section">
+            <div class="container">
+                <h2 class="section-title text-center">Let's Secure <span class="highlight">Your Peace of Mind</span></h2>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                                <i class="fas fa-user input-icon"></i>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27 12 345 6789">
+                                <i class="fas fa-phone input-icon"></i>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Security Consultation">
+                                <i class="fas fa-tag input-icon"></i>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us about your security needs..."></textarea>
+                    
+                                <div class="error-message"></div>
+                            </div>
+                            <button type="submit" class="btn-primary form-submit-btn pulse-effect">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <div id="formMessage" class="form-submission-message"></div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <h3>Our Details</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt info-icon"></i>
+                            <p><strong>Address:</strong> 123 Secure Lane, Safety City, 1234, South Africa</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt info-icon"></i>
+                            <p><strong>Phone:</strong> <a href="tel:+27123456789">+27 12 345 6789</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope info-icon"></i>
+                            <p><strong>Email:</strong> <a href="mailto:info@inqabasecurity.co.za">info@inqabasecurity.co.za</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock info-icon"></i>
+                            <p><strong>Business Hours:</strong> Mon - Fri: 8:00 AM - 5:00 PM</p>
+                        </div>
+
+                        <div class="map-container">
+                            <h3>Find Us on the Map</h3>
+                            <!-- Placeholder for an embedded map -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d31.3000!3d-29.5000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDMwJzAwLjAiUyAzMcKwMTgnMDYuMCJF!5e0!3m2!1sen!2sza!4v1678901234567!5m2!1sen!2sza"
+                                width="100%"
+                                height="300"
+                                style="border:0; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <p class="map-disclaimer"><em>*Map location is illustrative. Please contact us for precise directions.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2 class="section-title">Ready to secure your peace of mind?</h2>
+                <a href="contact.html" class="btn-primary pulse-effect">Contact Us Today</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Inqaba Security. All rights reserved.</p>
+            <div class="footer-social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
